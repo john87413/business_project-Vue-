@@ -1,8 +1,6 @@
 # business-project 前後端全步驟
 
-
 ## step1 create gitHub(choose One)
----
 ### 1.GitKraken
 ```
 Init gitHub responsity
@@ -17,9 +15,8 @@ git commit -m "first commit"
 git remote add origin https://github.com/john87413/business_project.git
 git push -u origin master
 ```
-
-## step2 create item
 ---
+## step2 create item
 ### 1.create three folder
 ```
 admin:後台管理 (Vue create admin)
@@ -55,3 +52,4 @@ web:前端網頁設計 (Vue create web)
 不能被git上去的東西
 1.node_modules
 ```
+---
