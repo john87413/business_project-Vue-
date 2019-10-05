@@ -1,16 +1,13 @@
-# business-project
+# business-project 前後端全步驟
 
-## Project main
-```
-前端全步驟
-```
 
-### step1 create gitHub(choose One)
-1. GitKraken
+## step1 create gitHub(choose One)
+---
+### 1.GitKraken
 ```
 Init gitHub responsity
 ```
-2. GitHub
+### 2.GitHub
 
 ```
 echo "# business_project" >> README.md
@@ -21,8 +18,9 @@ git remote add origin https://github.com/john87413/business_project.git
 git push -u origin master
 ```
 
-### step2 create item
-1. create three folder
+## step2 create item
+---
+### 1.create three folder
 ```
 admin:後台管理 (Vue create admin)
   用途:管理資料庫的資料，新增改查等等
@@ -30,6 +28,10 @@ admin:後台管理 (Vue create admin)
   1. npm install -g @vue/cli (已安裝過就不用)
   2. Vue create admin
   3. npm i element-ui -S (如有需要用element)
+     3.1 引入
+         import element from 'element-ui'
+         import 'element-ui/lib/theme-chalk/index.css';
+         Vue.use(element);
   4. vue add router
 
 server:前後端串聯 (mkdir server)
@@ -48,7 +50,7 @@ web:前端網頁設計 (Vue create web)
   2. Vue create web
 ```
 
-2. .gitignore
+### 2.gitignore
 ```
 不能被git上去的東西
 1.node_modules
