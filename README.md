@@ -1,4 +1,4 @@
-# business-project 前後端全步驟
+# business-project 前後端全步驟 // 記得增加nodemon 的dependency
 
 ## step1 create gitHub(choose One)
 ### 1.GitKraken
@@ -35,9 +35,11 @@ server:前後端串聯 (mkdir server)
   用途:包含所有node.js，提供給admin && web 的所有接口
   前置作業:
     1. mkdir server
-    2. npm init -y --> 初始化package.json
+    2. npm init -y --> 初始化package.json (-y 可省略問答快速初始化)
     3. 創建入口index.js
-    4. 自定義scripts --> "serve": "nodemon index.js"
+    4. 自定義scripts --> 
+      "serve": "nodemon index.js",
+      "start": "nodemon index.js" (heroku用)
     5. npm i -g nodemon
 
 web:前端網頁設計 (Vue create web)
