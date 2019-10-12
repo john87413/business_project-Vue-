@@ -1,0 +1,161 @@
+// ------------reset-----------------
+@import "./variables";
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    // line-height: 1rem; //下面會多出白白的一塊 不知為啥
+    font-family: 'Arvo', 'Noto Sans TC', 'Arial', 'Helvetica', 'sans-serif';
+    scroll-behavior: smooth;
+    background-image: url("../images/bg_plank.jpg"); //看情況
+    background-attachment: fixed;
+    background-repeat: no-repeat; //看情況
+    background-size: 100% auto; //看情況
+    position: relative; //看情況
+}
+
+a {
+    color: #fff;
+    // text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+    // float: left;
+}
+
+button {
+    border: none;
+    // border-radius: 0.5rem;
+}
+
+// --------利用 each 跑出常用屬性---------
+
+// ---flex---
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-1{
+    flex-grow: 1;
+}
+
+@each $key ,$value in $flex-jc {
+    .jc-#{$key}{
+        justify-content: $value;
+    }
+}
+
+@each $key ,$value in $flex-ai {
+    .ai-#{$key}{
+        align-items: $value;
+    }
+}
+
+// ---spacing---
+
+@each $typeKey, $type in $spacing-types {
+    
+    // .m-1
+    @each $sizeKey, $size in $spacing-sizes {
+        .#{$typeKey}-#{$sizeKey}{
+            #{$type}: $size * $spacing-base-size;
+        }
+    }
+
+    // .mx-1
+    @each $sizeKey, $size in $spacing-sizes {
+        .#{$typeKey}x-#{$sizeKey}{
+            #{$type}-left: $size * $spacing-base-size;
+            #{$type}-right: $size * $spacing-base-size;
+        }
+
+        .#{$typeKey}y-#{$sizeKey}{
+            #{$type}-top: $size * $spacing-base-size;
+            #{$type}-bottom: $size * $spacing-base-size;
+        }
+    }
+
+    // .mt-1
+    @each $directionKey, $direction in $spacing-direction{
+
+        @each $sizeKey, $size in $spacing-sizes {
+            .#{$typeKey}#{$directionKey}-#{$sizeKey}{
+                #{$type}-#{$direction}: $size * $spacing-base-size;
+            }
+        }
+    }
+}
+
+// ---colors---
+
+@each $colorKey, $color in $colors {
+    .text-#{$colorKey}{
+        color: $color;
+    }
+
+    .bg-#{$colorKey}{
+        background-color: $color;
+    }
+}
+
+// ---font size---
+
+@each $sizeKey, $size in $font-sizes {
+    .fs-#{$sizeKey}{
+        font-size: $size * $base-font-size;
+    }
+}
+
+// ---text align---
+
+@each $var in (left, center, right) {
+    .text-#{$var}{
+        text-align: $var;
+    }
+}
+
+
+// -------------額外常用樣式--------------------
+
+// ---寬高 100%---
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+// ---要不要換行--- 
+
+.fl-nowrap {
+    flex-wrap: nowrap;
+}
+
+.fl-wrap {
+    flex-wrap: wrap;
+}
+
+// ---字體加粗---
+
+.fw-bold {
+    font-weight: bold;
+}
