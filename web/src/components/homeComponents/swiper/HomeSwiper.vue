@@ -74,10 +74,10 @@ export default {
 .swiper-container {
   // 輪播圖容器
   .home-swiper-container {
-    width: 90rem;
+    width: 95rem;
     // 輪播圖片
     .home-swiper-item {
-      height: 50rem;
+      height: 47rem;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -138,18 +138,16 @@ export default {
     height: 1.8667rem !important;
   }
 }
-
-@media all and (max-width: 1490px) {
+@media all and (max-width: 1500px) {
   .swiper-container {
     .home-swiper-container {
-      width: 100vw !important;
+      width: 100vw;
       .home-swiper-item {
-        height: 53vw !important;
-        background-size: cover;
+        height: 50vw;
       }
     }
     .swiper-button {
-      width: 100vw !important;
+      width: 100vw;
     }
   }
 }

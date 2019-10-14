@@ -48,4 +48,15 @@ export default {
     }
   }
 }
+@media all and (max-width: 1000px) {
+  .footer-intro {
+    position: relative;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
 </style>

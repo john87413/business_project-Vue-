@@ -35,7 +35,9 @@ export default {
 @import "../../../../assets/scss/_variables.scss";
 .img-container {
   .img-intro {
+    width: 90rem;
     .intro-content {
+      width: 32%;
       position: relative;
       overflow: hidden;
       .content-img {
@@ -83,7 +85,7 @@ export default {
       &:hover {
         .content-img {
           img {
-            top: -55px;
+            top: -3.6667rem;
           }
           &::before {
             bottom: 5.0667rem;
@@ -99,11 +101,52 @@ export default {
     }
   }
 }
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1600px) {
+  .img-container {
+    .img-intro {
+      width: 78rem;
+      .intro-content {
+        .content-name {
+          height: 3.5rem;
+          .name {
+            font-size: 1.4667rem;
+          }
+        }
+        &:hover {
+          .content-img {
+            img {
+              top: -3.2rem;
+            }
+            &::before {
+              bottom: 4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1080px) {
   .img-container {
     .img-intro {
       .intro-content {
-        width: 32%;
+        width: 38%;
+        .content-name {
+          height: 3.5rem;
+          .name {
+            font-size: 1.4667rem;
+          }
+        }
+        &:hover {
+          .content-img {
+            img {
+              top: -3.2rem;
+            }
+            &::before {
+              bottom: 4rem;
+            }
+          }
+        }
       }
     }
   }

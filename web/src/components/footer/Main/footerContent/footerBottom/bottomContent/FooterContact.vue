@@ -1,6 +1,7 @@
 <template>
   <div class="footer-contact mx-5">
     <div class="contact-container d-flex jc-center ai-center">
+      <!-- 四個按鈕 -->
       <div class="contact-community">
         <ul class="community-container d-flex fl-wrap jc-center ai-center">
           <li
@@ -14,6 +15,7 @@
           </li>
         </ul>
       </div>
+      <!-- QR code -->
       <div class="contact-code ml-3">
         <img :src="content.contactCode" />
       </div>
@@ -108,6 +110,18 @@ export default {
           width: 8rem;
           height: 6rem;
         }
+      }
+    }
+  }
+}
+@media all and (max-width: 1000px) {
+  .footer-contact {
+    .contact-container {
+      .contact-community {
+        display: none;
+      }
+      .contact-code{
+        margin: 0;
       }
     }
   }

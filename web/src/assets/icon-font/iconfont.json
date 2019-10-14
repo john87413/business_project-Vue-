@@ -13,6 +13,13 @@
       "unicode_decimal": 58886
     },
     {
+      "icon_id": "2244793",
+      "name": "fb",
+      "font_class": "fb",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
       "icon_id": "2326762",
       "name": "Google",
       "font_class": "Google",
@@ -25,6 +32,27 @@
       "font_class": "IG",
       "unicode": "e616",
       "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "3721500",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e715",
+      "unicode_decimal": 59157
+    },
+    {
+      "icon_id": "8335311",
+      "name": "mail, envelope, letter, email, newsletter",
+      "font_class": "mailenvelopeletteremailnewsletter",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "9515016",
+      "name": "home",
+      "font_class": "xuanzhongshangcheng",
+      "unicode": "e501",
+      "unicode_decimal": 58625
     },
     {
       "icon_id": "10236327",
