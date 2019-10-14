@@ -41,7 +41,7 @@ export default {
                     url:"/home/contact"
                 },
                 {
-                    titleCh:"品牌介紹",
+                    titleCh:"創業專區",
                     titleEn:"/ JOIN",
                     url:"/home/join"
                 },

@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2074202",
+      "name": "twiiter",
+      "font_class": "twiiterico",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "2326762",
+      "name": "Google",
+      "font_class": "Google",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "2836498",
+      "name": "IG",
+      "font_class": "IG",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "10236327",
+      "name": "fb",
+      "font_class": "ios-morse-facebook",
+      "unicode": "e537",
+      "unicode_decimal": 58679
+    }
+  ]
+}

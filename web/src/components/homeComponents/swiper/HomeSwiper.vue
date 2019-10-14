@@ -74,18 +74,20 @@ export default {
 .swiper-container {
   // 輪播圖容器
   .home-swiper-container {
-    width: 100rem;
+    width: 90rem;
     // 輪播圖片
     .home-swiper-item {
-      height: 80vh;
+      height: 50rem;
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
       &:nth-child(1) {
         background-image: url("../../../assets/images/swiper-1.jpg");
+        background-size: cover;
       }
       &:nth-child(2) {
         background-image: url("../../../assets/images/swiper-2.jpg");
+        background-size: cover;
       }
       // 輪播圖要去的連結
       a {
@@ -97,7 +99,7 @@ export default {
   // menu 父容器
   .swiper-button {
     border-top: solid 1px map-get($colors, "orange-3");
-    width: 96rem;
+    width: 90rem;
     // ul 容器
     .button-ul-container {
       // li 容器

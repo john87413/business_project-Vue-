@@ -8,9 +8,9 @@
 
 <script>
 // component 區
-import myTitle from "../../title/HomeTitle";
-import myNews from "./homeContent/News";
-import myMore from '../../viewMore/HomeMore'
+import myTitle from "../../useFul/title/HomeTitle";
+import myNews from "./newsContent/News";
+import myMore from '../../useFul/viewMore/HomeMore'
 
 // img 區
 import news_img_1 from "../../../assets/images/news_img_1.jpg";

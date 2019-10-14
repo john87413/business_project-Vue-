@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/scss/_variables.scss";
+@import "../../../assets/scss/_variables.scss";
 //   按鈕父容器
 .home-view-more {
   position: relative;

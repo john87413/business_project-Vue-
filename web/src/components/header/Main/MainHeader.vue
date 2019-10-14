@@ -35,7 +35,7 @@ export default {
 .main-head {
   z-index: 2;
   position: fixed;
-  border-bottom: 1px solid map-get($colors, "orange-6" );
+  border-bottom: 1px solid map-get($colors, "orange-6");
   // 容器
   .head-container {
     // 品牌標題
@@ -54,7 +54,7 @@ export default {
       }
     }
   }
-  // 網頁menu 
+  // 網頁menu
   .head-menu {
     // menu 容器
     .menu-container {
@@ -75,6 +75,17 @@ export default {
             color: map-get($colors, "orange-1");
           }
         }
+      }
+    }
+  }
+}
+@media all and (max-width: 1130px) {
+  .head-menu {
+    // menu 容器
+    .menu-container {
+      // menu item 本身
+      .menu-item {
+        margin: 0 0.7rem;
       }
     }
   }

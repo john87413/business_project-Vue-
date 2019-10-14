@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../assets/scss/_variables.scss";
+@import "../../../../assets/scss/_variables.scss";
 .img-container {
   .img-intro {
     .intro-content {
@@ -53,6 +53,8 @@ export default {
         }
         img {
           position: relative;
+          max-width: 100%;
+          height: auto !important;
           top: 0;
           transition: all 0.3s ease;
         }
@@ -93,6 +95,15 @@ export default {
             opacity: 1;
           }
         }
+      }
+    }
+  }
+}
+@media all and (max-width: 1500px) {
+  .img-container {
+    .img-intro {
+      .intro-content {
+        width: 32%;
       }
     }
   }

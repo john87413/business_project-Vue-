@@ -20,6 +20,7 @@ $spacing-direction: (t: top,r: right, b: bottom, l: left);
 $spacing-base-size: 1rem;
 $spacing-sizes: (
     0:0,
+    "0-5":0.05,
     1:0.25,
     2:0.5,
     3:1,
@@ -50,6 +51,8 @@ $colors: (
     "grey": #595959,
     "grey-1": #444443,
     "grey-2": #333333,
+    "grey-3": #CDD2D4,
+    "grey-4": #999,
     "white":  #fff,
     "none":  #00000000,
 );
@@ -64,6 +67,7 @@ $font-sizes: (
     lgs: 1.0667, //16px
     lg: 1.1333, //17px
     xl: 1.2, //18px
+    xlx: 1.4,//21px
     xxl: 2, //30px
     xxxl: 2.6667, //40px
 );

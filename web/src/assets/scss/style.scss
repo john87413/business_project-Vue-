@@ -14,13 +14,13 @@ html{
 
 body{
     margin: 0;
-    // line-height: 1rem; //下面會多出白白的一塊 不知為啥
+    // line-height: 2.5rem; //下面會多出白白的一塊 不知為啥
     font-family: 'Arvo', 'Noto Sans TC', 'Arial', 'Helvetica', 'sans-serif';
     scroll-behavior: smooth;
     background-image: url("../images/bg_plank.jpg"); //看情況
     background-attachment: fixed;
     background-repeat: no-repeat; //看情況
-    background-size: 100% auto; //看情況
+    background-size: 100% 100%; //看情況
     position: relative; //看情況
 }
 
@@ -32,7 +32,7 @@ a {
 li {
     list-style-type: none;
     cursor: pointer;
-    // float: left;
+    float: left;
 }
 
 button {

@@ -166,4 +166,24 @@ export default {
     }
   }
 }
+@media all and (max-width: 1155px) {
+  .home-news-content {
+    // 新聞子容器
+    .news-container {
+      width: 70rem;
+    }
+  }
+}
+@media all and (max-width: 1080px) {
+  .home-news-content {
+    // 新聞子容器
+    .news-container {
+      width: 85%;
+      .news-content {
+        justify-content: center;
+        width: 95%;
+      }
+    }
+  }
+}
 </style>
